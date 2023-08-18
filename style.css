@@ -1,0 +1,807 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+*{
+  text-decoration: none;
+}
+
+
+body {
+  background: white;
+  font-size:16px;
+  line-height: 20px;
+ 
+  word-wrap:break-word !important;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  }
+
+a {
+  color: #FFF;
+}
+
+p {
+  text-align: center;
+}
+
+nav {
+  background-color:#0099FF ;
+  margin:0 auto;
+  
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+   
+}
+
+.logo{
+  
+width: 120px;
+
+}
+
+.nav-carro:hover{
+  color: #0e2a3d;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #0fa,
+  0 0 82px #0fa,
+  0 0 92px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa;
+  background: none;
+  
+}
+
+
+.box-logo{
+  display: flex;
+  justify-content: end;
+  padding-right: 80px ;
+}
+  
+nav ul li {
+ 
+  display:inline-block;
+  background-color: #0099FF;
+  
+  }
+
+  .dentro{
+    border-radius: 10px;
+    border: 1px solid #0099FF;
+  }
+
+nav a {
+  display:block;
+  padding:0 25px; 
+  color:#FFF;
+  font-size:16px;
+  line-height: 60px;
+  text-decoration:none;
+  
+}
+
+nav a:hover { 
+  background-color: #f8f8f8; 
+  color: #0e2a3d;
+}
+
+.dentro-a{
+ line-height: 50px;
+  
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  display: none;
+  position: absolute; 
+  top: 60px; /* the height of the main nav */
+}
+  
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display:inherit;
+}
+  
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+  position: relative;
+  top:-60px; 
+  left:170px;
+}
+
+/* SECCION HEADER */
+
+.img-header{
+  width: 570px;
+}
+
+.contenido-header{
+  display: flex;
+  align-items: center;
+  padding-left: 260px;
+  
+}
+
+div .titulo-header h2{
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  padding-right: 209px;
+  padding-bottom: 30px;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color: rgb(25, 176, 25);
+  text-shadow: 3px 1px 3px rgb(15, 103, 18);
+
+
+}
+
+div .titulo-header p{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  font-size: 25px;
+  padding-right: 209px;
+  line-height: 1.4;
+  color:#5e7280
+
+}
+
+
+@media (max-width: 768px){
+  .img-header{
+    width: 330px;
+    margin: 22px;
+  }
+  .contenido-header{
+    display: grid;
+    margin: 0px;
+    padding: 0;
+  }
+  div .titulo-header h2{
+font-size: 30px;
+padding: 10px;
+margin: 0;
+  }
+  div .titulo-header p{
+    font-size: 18px;
+    margin: 20px;
+    padding: 0;
+  }
+
+
+}
+
+
+
+/* Promocion -----------------*/
+.img-juego{
+  width: 570px;
+}
+
+.contenido-juego{
+  display: flex;
+  align-items: center;
+  padding-right: 260px;
+  margin-top: 100px;
+  
+}
+
+div .titulo-juego h2{
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  padding-left: 209px;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color: #0099FF;
+  text-shadow: 3px 1px 3px rgb(33, 108, 174);
+
+
+}
+
+div .titulo-juego p{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  font-size: 25px;
+  padding-left: 209px;
+  line-height: 1.4;
+  color:#5e7280
+
+}
+
+.boton{
+  margin-top: 30px;
+  color: #4A9D40;
+  display: flex;
+  justify-content: center;
+  padding-left: 209px;
+  font-size: 25px;
+  font-weight: 700;
+
+}
+
+
+@media (max-width: 768px){
+  .img-juego{
+    width: 370px;
+}
+.contenido-juego{
+  display: grid;
+}
+div .titulo-juego h2{
+  font-size: 30px;
+padding: 0;
+}
+div .titulo-juego p{
+  font-size: 18px;
+  padding: 0;
+}
+.boton{
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+}
+
+
+
+/* EXPANSIONES*/
+
+.oculta {
+  display: none;
+}
+
+
+.expansiones{
+padding:200px 100px;
+  background-color: #4A9D40;
+  
+}
+
+.padre-juegos{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 30px;
+  background-color: #eaeaeb;
+  border-radius: 8px;
+  box-shadow: 10px 20px 6px rgba(4, 2, 2, 0.769);
+  width: 340px;
+  margin: 20px auto;
+  transition: transform 0.2s; 
+  
+}
+.product-card:hover {
+  transform: translateY(-5px);}
+
+.separador{
+  border-top: 2px solid #908a8a;
+  width: 80%; /* Ajusta el ancho de la línea según tu preferencia */
+  margin: 10px auto;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 10px rgb(85, 82, 82);
+  margin-bottom: 20px;
+}
+
+.product-title {
+  display: flex;
+  justify-content: center;
+  color: #383e42;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.buy-now-text {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  gap: 10px;
+}
+
+.carrito-btn{
+  display: flex;
+  color:rgb(97, 94, 94);
+   gap: 10px;
+   margin-top: 10px;
+   align-items: center;
+   
+}
+/* TRUCOS---------------- */
+
+
+/* Resetear los márgenes y rellenos predeterminados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para el icono del título */
+.img-logo {
+  width: 320px;
+  display: block;
+  margin: 20px auto 30px;
+}
+
+/* Estilo para el contenedor de los trucos */
+.trucos-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+}
+
+/* Estilo para el texto de los trucos */
+.trucos-texto {
+  text-align: left;
+  margin-right: 200px;
+  flex: 1;
+}
+
+/* Estilo para los encabezados h2 */
+.trucos-texto h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+/* Estilo para el párrafo en el texto de los trucos */
+.trucos-texto p {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilo para la imagen de los trucos */
+.img-pc {
+  width: 50%;
+  max-width: 550px;
+  margin-top: 20px;
+}
+
+
+.box-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn-trucos{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.72);
+  font-size: 15px;
+  color: #0e2a3d;
+ 
+}
+
+.btn-trucos:hover{
+  background-color: #4A9D40;
+  color: white;
+}
+
+
+/* Media query para dispositivos con un ancho máximo de 768px (tabletas y móviles) */
+@media (max-width: 768px) {
+  .trucos-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-logo {
+    margin-top: 20px;
+  }
+
+  .trucos-texto {
+    margin: 0 10px; /* Añade margen horizontal */
+  }
+
+  .img-pc {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+
+/* footer ------------*/
+
+
+/* Estilos generales del footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Estilos para la línea divisoria */
+.social-icons hr {
+  margin: 10px 0;
+  border: 1px solid #555;
+}
+
+/* Estilos para el cuadro de contacto */
+.contact-box {
+  margin: 20px 0;
+}
+
+/* Estilos para el enlace de regreso arriba */
+.scroll-top a {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  margin-bottom: 135px;
+  border: 2px solid #0099FF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Estilos para los íconos de la empresa */
+.company-icons {
+  display: flex; /* Alinear los logos horizontalmente */
+  justify-content: center; /* Centrar los logos horizontalmente */
+  align-items: center; /* Centrar los logos verticalmente */
+}
+
+.company-icons img {
+  width: 80px; /* Ajustar el tamaño de los logos */
+  margin: 0 10px;
+}
+
+/* Media query para hacer el footer responsive */
+@media (max-width: 768px) {
+  .social-icons {
+    display: block;
+    text-align: center;
+  }
+  
+  .social-icons hr {
+    margin: 10px auto;
+  }
+  
+  .company-icons img {
+    width: 60px;
+    display: block;
+    margin: 10px auto;
+  }
+}
+/* Estilos generales del footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Estilos para la línea divisoria */
+.social-icons hr {
+  margin: 10px 0;
+  border: 1px solid #555;
+}
+
+/* Estilos para el cuadro de contacto */
+.contact-box {
+  margin: 20px 0;
+}
+
+/* Estilos para el enlace de regreso arriba */
+.scroll-top a {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* Estilos para los íconos de la empresa */
+.company-icons {
+  display: flex; /* Alinear los logos horizontalmente */
+  justify-content: center; /* Centrar los logos horizontalmente */
+  align-items: center; /* Centrar los logos verticalmente */
+}
+
+.company-icons img {
+  width: 80px; /* Ajustar el tamaño de los logos */
+  margin: 0 10px;
+}
+
+/* Media query para hacer el footer responsive */
+@media (max-width: 768px) {
+  .social-icons {
+    display: block;
+    text-align: center;
+  }
+  
+  .social-icons hr {
+    margin: 10px auto;
+  }
+  
+  .company-icons img {
+    width: 60px;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+
+/* --------------CARRITO COMPRAS-------------- */ 
+/* Estilos para el icono del carrito en el navbar */
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* carrito navbar */
+.cart-icon a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+}
+/* numero carrito navbar */
+#cart-count {
+  font-size: 16px;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #f77f00;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para la ventana emergente del carrito */
+.cart-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.cart-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+
+
+#cart-items-list {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#cart-item img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+#cart-total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cart-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 14px;
+  background-color: #f77f00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-buttons button:hover {
+  background-color: #d46c00;
+}
+
+
+
+/* NOTICIAS------------ */
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+  gap: 30px;}
+  
+
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  width: 350px;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+  text-align: center; }
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+}
+.bnt-card-noticias{
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 7px;
+  border: none;
+ background-color:#F8F8F8;
+ box-shadow:1px 2px 8px #162c14;
+ tra
+}
+
+.bnt-card-noticias:hover{
+  background-color: #19B019;
+  
+}
+
+
+.bnt-card-noticias a{
+  font-size: 15px;
+ color: #0e2a3d;
+}
+.bnt-card-noticias a:hover{
+  color: white;
+}
+/* faq ------------------------------------*/
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  
+}
+
+.qna {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 30px;
+  box-shadow: 1px 2px 7px rgb(14, 79, 6);
+}
+
+.question {
+  font-weight: bold;
+}
+
+.answer {
+  margin-top: 25px;
+}
+/* ------------------------- media querys */
+

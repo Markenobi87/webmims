@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mims</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="./assets/verde.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e39cc26d40.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="container">
+
+            <nav>
+                <ul>
+
+                    <li><a href="#">Juegos<i class="fa-solid fa-chevron-down"></i></a>
+
+                        <ul>
+                            <li class="dentro"><a class="dentro-a" id="ir-juego-base" href="#juego-base">Juego Base</a>
+                            </li>
+
+                            <li class="dentro"><a class="dentro-a" id="ir-expansiones"
+                                    href="#expansiones">Expansiones</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="#">Ayuda <i class="fa-solid fa-chevron-down"></i></a>
+
+                        <ul>
+                            <li class="dentro"><a class="dentro-a" href="faq.html">FAQ</a></li>
+                            <li class="dentro"><a class="dentro-a" href="trucos.html" id="">Trucos</a></li>
+                        </ul>
+
+
+                    </li>
+
+                    </li>
+
+                </ul>
+                <div class="box-logo">
+                    <img class="logo" src="./assets/logopequeño.png" alt="logomisms">
+
+                    <!-- <a class="nav-carro" href="#" id="carrito-icono"><i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cantidad-items-carrito">0</span></a> -->
+
+                    <!-- --------------- -->
+
+                    <div class="cart-icon">
+                        <a href="#" id="cart-button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="cart-count">0</span>
+                        </a>
+                    </div>
+
+                    <div class="cart-modal" id="cart-modal">
+                        <div class="cart-content">
+                            <span class="close">&times;</span>
+                            <h2 class="titulo-ventana-emergente">Carrito de Compra</h2>
+                            <ul id="cart-items-list"></ul>
+                            <p id="cart-total">Total: $0.00</p>
+                            <div class="cart-buttons">
+                                <button id="clear-cart">Limpiar Carrito</button>
+                                <button id="checkout">Finalizar Compra</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+                <path fill="#0099ff" fill-opacity="1"
+                    d="M0,128L60,112C120,96,240,64,360,90.7C480,117,600,203,720,197.3C840,192,960,96,1080,80C1200,64,1320,128,1380,160L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <!-- HEADER -->
+
+            <section id="header" class="header">
+
+                <div class="contenido-header">
+                    <img class="img-header" src="./assets/grupo6.png" alt=" chica">
+                    <div class="titulo-header">
+                        <h2>Juega a la vida</h2>
+                        <p>Los Mims 4 es el juego de simulación social definitivo:
+                            crea personajes únicos, construye casas de ensueño y deja que se desata el caos.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- promocion -->
+
+            <section id="juegos">
+
+                <div class="contenido-juego">
+
+                    <div class="titulo-juego">
+                        <h2>!Nuevo Pack!, La Granja </h2>
+                        <p>Crea tu propia granja, cuida de nuevos animales.Vive en plena
+                            naturaleza.!La expansion mas animal!
+                        </p>
+                        <a class="boton" href="exgranja.html">¡Compralo ya!</a>
+
+                    </div>
+
+                    <img class="img-juego" src="./assets/aheeo.png" alt=" chica">
+
+
+                </div>
+
+            </section>
+
+    </header>
+
+    <!-- EXPANSIOOONESSS -->
+
+    <section class="expansiones oculta" id="expansiones">
+
+
+        <div class="padre-juegos">
+            <a class="product-link" href="extropicalia.html">
+                <div class="product-card">
+                    <img class="product-image" src="./assets/tropical.jpg" alt="Nombre del producto">
+                    <hr class="separador">
+                    <h3 class="product-title">Mims4 Tropicalia</h3>
+                    <p class="precio-hidden" data-precio="35.00"></p>
+                    <a class="carrito-btn" data-nombre="Mims4 Tropicalia" href="#">Compralo ya<i
+                            class="fa-solid fa-cart-shopping"></i>
+
+                </div>
+            </a>
+
+            <a class="product-link" href="exestaciones.html">
+                <div class="product-card">
+                    <img class="product-image" src="./assets/ESTACIONES.jpg" alt="Nombre del producto">
+                    <hr class="separador">
+                    <h3 class="product-title">Mims4 Estaciones</h3>
+                    <p class="precio-hidden" data-precio="35.00"></p>
+                    <a class="carrito-btn" data-nombre="Mims4 Estaciones" href="#">Compralo ya<i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </a>
+
+            <a class="product-link" href="exgranja.html">
+                <div class="product-card">
+                    <img class="product-image" src="./assets/GRANJA.jpg" alt="Nombre del producto">
+                    <hr class="separador">
+                    <h3 class="product-title">Mims4 La Granja</h3>
+                    <p class="precio-hidden" data-precio="35.00"></p>
+                    <a class="carrito-btn" data-nombre="Mims4 La Granja" href="#">Compralo ya<i
+                            class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+
+            <a class="product-link" href="extrabajos.html">
+                <div class="product-card">
+                    <img class="product-image" src="./assets/JUEGOTRABAJOS.jpg" alt="Nombre del producto">
+                    <hr class="separador">
+                    <h3 class="product-title">Mims4 Trabajos</h3>
+                    <p class="precio-hidden" data-precio="35.00"></p>
+                    <a class="carrito-btn" data-nombre="Mims4 Trabajos" href="#">Compralo ya<i
+                            class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+
+            <a class="product-link" href="exnavidad.html">
+                <div class="product-card">
+                    <img class="product-image" src="./assets/navidad.jpg" alt="Nombre del producto">
+                    <hr class="separador">
+                    <h3 class="product-title">Mims4 Navidad</h3>
+                    <p class="precio-hidden" data-precio="35.00"></p>
+                    <a class="carrito-btn" data-nombre="Mims4 Navidad" href="#">Compralo ya<i
+                            class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+
+            <a class="product-link" href="exmascotas.html">
+                <div class="product-card">
+                    <img class="product-image" src="./assets/MASCOTAS.jpg" alt="Nombre del producto">
+                    <hr class="separador">
+                    <h3 class="product-title">Mims4 Mascotas</h3>
+                    <p class="precio-hidden" data-precio="35.00"></p>
+                    <a class="carrito-btn" data-nombre="Mims4 Mascotas" href="#">Compralo ya<i
+                            class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+
+            <a class="product-link" href="exuni.html">
+                <div class="product-card">
+                    <img class="product-image" src="./assets/UNIVERSIDAD.jpg" alt="Nombre del producto">
+                    <hr class="separador">
+                    <h3 class="product-title">Mims4 Universidad</h3>
+                    <p class="precio-hidden" data-precio="35.00"></p>
+                    <a class="carrito-btn" data-nombre="Mims4 Universidad" href="#">Compralo ya<i
+                            class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+
+            <a class="product-link" href="exfamilia.html">
+                <div class="product-card">
+                    <img class="product-image" src="./assets/FAMILIA.jpg" alt="Nombre del producto">
+                    <hr class="separador">
+                    <h3 class="product-title">Mims4 Familia</h3>
+                    <p class="precio-hidden" data-precio="35.00"></p>
+                    <a class="carrito-btn" data-nombre="Mims4 Familia" href="#">Compralo ya<i
+                            class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+
+            <a class="product-link" href="exjuegobase.html">
+                <div id="juego-base" class="product-card">
+                    <img class="product-image" src="./assets/juego base.jpg" alt="Nombre del producto">
+                    <hr class="separador">
+                    <h3 class="product-title">Los Mims4</h3>
+                    <p class="precio-hidden" data-precio="55.00"></p>
+                    <a class="carrito-btn" data-nombre=" Los Mims4 Juego base" href="#">Compralo ya<i
+                            class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <hr>
+        </div>
+
+
+        <div class="contact-box">
+
+            <p>@2023 Los Mims inc.</p>
+
+        </div>
+
+        <div class="scroll-top">
+            <a href="#container">inicio <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+
+        <div class="company-icons">
+            <img class="pegi" src="./assets/ZfIJ7T.png" alt="Logo">
+            <img class="mauxis" src="./assets/logomaxis.png" alt="Logo">
+            <img class="mims" src="./assets/logo.png" alt="Company">
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
