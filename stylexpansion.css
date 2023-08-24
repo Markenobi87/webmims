@@ -227,10 +227,11 @@ a {
 }
 
 div .titulo-header h2{
+  margin-bottom: 30px;
   align-items: center;
   align-content: center;
   display: flex;
-  padding-right: 209px;
+  padding-left: 260px;
   font-size: 50px;
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
